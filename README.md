@@ -8,11 +8,12 @@ This repository is a navigable research portfolio highlighting my scientific pub
 
 **Research catalogue:** 71 articles supplied in the bibliography (2011–2025) · [Complete searchable CSV](data/publications.csv) · [JSON](data/publications.json) · [Dissertations & research projects](docs/theses-and-projects.md)
 
-> **Citation metrics:** [View the latest figures on Google Scholar](https://scholar.google.com/citations?user=QDAoQt8AAAAJ). A live snapshot appears below only after the optional scheduled updater is configured; otherwise this README does not claim to display live citation totals.
+> **Research impact:** Publication and citation metrics below are sourced from **OpenAlex** (not Google Scholar or Scopus). For database-specific counts, see [Google Scholar](https://scholar.google.com/citations?user=QDAoQt8AAAAJ) and [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55388336000).
 
-<!-- SCHOLAR_METRICS_START -->
-**Google Scholar metrics:** automatic updates not configured. [See the live Scholar profile](https://scholar.google.com/citations?user=QDAoQt8AAAAJ).
-<!-- SCHOLAR_METRICS_END -->
+<!-- OPENALEX_METRICS_START -->
+**OpenAlex research impact** · **85** indexed works · **975** citations · **h-index 17** · **i10-index 27**  
+*Updated 2026-10-23 06:33 UTC · [OpenAlex author record](https://openalex.org/A5074091602). Counts vary by database; [Google Scholar](https://scholar.google.com/citations?user=QDAoQt8AAAAJ) and [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55388336000) provide their own metrics.*
+<!-- OPENALEX_METRICS_END -->
 
 ## Research approach and contribution
 
@@ -93,19 +94,20 @@ I have taught undergraduate and postgraduate chemistry, coordinated postgraduate
 │   ├── theses-and-projects.md
 │   └── teaching-and-experience.md
 ├── scripts/
-│   ├── update_scholar_metrics.py
+│   ├── update_research_metrics.py
 │   └── validate_catalogue.py
 └── .github/workflows/
-    └── update-scholar.yml
+    └── update-research-metrics.yml
 ```
 
 ## Bibliography provenance and quality notes
 
 The 71 records and DOI strings were **transcribed and lightly normalized from a supplied publication list**, not individually validated against Crossref or publisher databases. Titles and journal abbreviations may differ from the publisher versions. **Publication #3 has no DOI in the supplied list.** The CSV identifies each record by its original bibliography number. The seven subject collections classify each paper once for browsing; some research is intrinsically cross-disciplinary. Please consult DOI landing pages, [ORCID](https://orcid.org/0000-0003-2421-1382) and [Scholar](https://scholar.google.com/citations?user=QDAoQt8AAAAJ) for authoritative records and newer publications.
 
-## Scholar metric updates (optional)
+## Research impact updates
 
-Google Scholar does **not** provide a standard public, free author-metrics API for dependable automatic GitHub updates. This repository includes an **optional weekly GitHub Actions workflow using SerpApi**, which may require an account and paid API usage. It is **not active** until you provide the `SERPAPI_KEY` repository secret and enable GitHub Actions with write permission. Failed API calls leave the last valid snapshot unchanged; the live profile link always remains available. [Setup instructions](docs/metrics-setup.md).
+The citation summary above is refreshed weekly from **OpenAlex** and explicitly labeled by data source. Publication coverage and citation counts can differ across indexing services. [Google Scholar](https://scholar.google.com/citations?user=QDAoQt8AAAAJ), [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55388336000), and [ORCID](https://orcid.org/0000-0003-2421-1382) remain the direct source-specific profiles. [Metrics setup and troubleshooting](docs/metrics-setup.md).
+
 
 ## Research integrity
 

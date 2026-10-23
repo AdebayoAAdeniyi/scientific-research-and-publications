@@ -1,0 +1,36 @@
+name: Update research metrics (OpenAlex)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 9 * * 1'
+permissions:
+  contents: write
+concurrency:
+  group: openalex-metrics
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Refresh OpenAlex metrics
+        env:
+          OPENALEX_AUTHOR_ID: ${{ vars.OPENALEX_AUTHOR_ID }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/update_research_metrics.py
+      - name: Commit snapshot if changed
+        run: |
+          if ! git diff --quiet -- README.md data/research_metrics.json || [ -n "$(git ls-files --others --exclude-standard data/research_metrics.json)" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add README.md data/research_metrics.json
+            git commit -m 'Refresh OpenAlex research metrics'
+            git push
+          fi
