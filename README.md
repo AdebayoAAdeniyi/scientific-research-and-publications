@@ -11,8 +11,8 @@ This repository is a navigable research portfolio highlighting my scientific pub
 > **Research impact:** Publication and citation metrics below are sourced from **OpenAlex** (not Google Scholar or Scopus). For database-specific counts, see [Google Scholar](https://scholar.google.com/citations?user=QDAoQt8AAAAJ) and [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55388336000).
 
 <!-- OPENALEX_METRICS_START -->
-**OpenAlex research impact** · **85** indexed works · **979** citations · **h-index 17** · **i10-index 27**  
-*Updated 2026-10-26 16:10 UTC · [OpenAlex author record](https://openalex.org/A5074091602). Counts vary by database; [Google Scholar](https://scholar.google.com/citations?user=QDAoQt8AAAAJ) and [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55388336000) provide their own metrics.*
+**OpenAlex research impact** · **85** indexed works · **988** citations · **h-index 17** · **i10-index 27**  
+*Updated 2026-11-02 19:33 UTC · [OpenAlex author record](https://openalex.org/A5074091602). Counts vary by database; [Google Scholar](https://scholar.google.com/citations?user=QDAoQt8AAAAJ) and [Scopus](https://www.scopus.com/authid/detail.uri?authorId=55388336000) provide their own metrics.*
 <!-- OPENALEX_METRICS_END -->
 
 ## Research approach and contribution
