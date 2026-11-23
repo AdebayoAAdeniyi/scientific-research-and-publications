@@ -1,11 +1,11 @@
 {
   "source": "OpenAlex",
-  "retrieved_at_utc": "2026-11-16 19:40 UTC",
+  "retrieved_at_utc": "2026-11-23 21:29 UTC",
   "author_name": "Adebayo A. Adeniyi",
   "author_id": "https://openalex.org/A5074091602",
   "orcid": "0000-0003-2421-1382",
   "works_count": 85,
-  "cited_by_count": 1071,
+  "cited_by_count": 1085,
   "h_index": 18,
   "i10_index": 29
 }
